@@ -21,7 +21,9 @@ export const connect = async () => {
 	});
 
 	await waitReady();
-	const authHeader = generateCrustAuthToken('');
+	const authHeader = generateCrustAuthToken(
+		'!drip 5D7j3ZpoPhg4qcKX29ZRDu36av8r8zQEQVZh1RuGNcfMoXkW'
+	);
 
 	ipfs = new SubsocialIpfsApi({
 		ipfsNodeUrl: 'https://crustwebsites.net',
